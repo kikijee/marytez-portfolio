@@ -33,7 +33,7 @@ export default function Home() {
 
 
         <Container
-          maxWidth="lg"
+          maxWidth="md"
           sx={{
             position: "relative", // Make this container relative for positioning
             display: "flex",
@@ -41,7 +41,13 @@ export default function Home() {
             alignItems: "center",
             flexWrap: "wrap",
             gap: 2,
-            mt: 20,
+            mt: {
+              xs:2,
+              sm:4,
+              md:6,
+              lg:8,
+              xl:10
+            },
           }}
         >
 
@@ -52,11 +58,11 @@ export default function Home() {
               sx={{
                 fontFamily: "serif",
                 fontSize:{
-                  xs:22,
-                  sm:24,
-                  md:26,
-                  lg:28,
-                  xl:30
+                  xs:26,
+                  sm:28,
+                  md:30,
+                  lg:32,
+                  xl:34
                 }
               }}
             >
@@ -67,11 +73,11 @@ export default function Home() {
               sx={{
                 fontFamily: "serif",
                 fontSize:{
-                  xs:22,
-                  sm:24,
-                  md:26,
-                  lg:28,
-                  xl:30
+                  xs:26,
+                  sm:28,
+                  md:30,
+                  lg:32,
+                  xl:34
                 }
               }}
             >
@@ -86,7 +92,13 @@ export default function Home() {
             sx={{
               opacity: 0.3, // Makes the image blend into the background
               zIndex: -1, // Places the image behind the text
-              width: "500px", // Adjust size as needed
+              width: {
+                  xs:'250px',
+                  sm:'300px',
+                  md:'350px',
+                  lg:'400px',
+                  xl:'450px'
+              }, // Adjust size as needed
               height: "auto",
             }}
           />
@@ -96,6 +108,57 @@ export default function Home() {
 
 
       </Box>
+
+      <Container
+          maxWidth="md"
+          sx={{
+            position: "relative", // Make this container relative for positioning
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: 2,
+            height: "100vh",
+            mt: {
+              xs:0,
+              sm:2,
+              md:4,
+              lg:6,
+              xl:8
+            },
+          }}
+        >
+          <Box>
+            <Typography
+              sx={{
+                fontFamily:"serif",
+                fontSize:30,
+              }}
+            >
+              MANIFESTO
+            </Typography>
+            <Divider sx={{maxWidth:"75%"}}/>
+          </Box>
+          <Box
+            sx={{
+              maxWidth:"50%"
+            }}
+          >
+            <Typography
+              sx={{
+                fontFamily:"serif",
+                fontSize:20
+              }}
+            >
+              Lorem ipsum odor amet, consectetuer adipiscing elit. 
+              Ipsum maecenas himenaeos phasellus nascetur eu dictumst 
+              sociosqu mi sollicitudin. Parturient massa ante libero, 
+              eleifend conubia convallis. Nec morbi tellus non lorem; 
+              fermentum taciti. Egestas purus placerat ornare neque pulvinar.
+            </Typography>
+          </Box>
+        </Container>
+
       <Box
         component="footer"
         sx={{

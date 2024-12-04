@@ -14,6 +14,13 @@ const about =()=>{
                         variant="h4"
                         sx={{
                             fontFamily: "serif",
+                            fontSize:{
+                                xs:22,
+                                sm:24,
+                                md:26,
+                                lg:28,
+                                xl:30
+                              }
                         }}
                     >
                         Marytez Salas
