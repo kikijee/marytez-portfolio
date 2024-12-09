@@ -1,9 +1,10 @@
 import React from "react";
 import { Box, Typography, CssBaseline, Container } from "@mui/material";
 import Divider from '@mui/material/Divider';
-import MenuDrawer from "./components/MenuDrawer";
 import ConnectFooter from "./components/ConnectFooter";
 import { Colors } from "./theme/colors";
+import Header from "./components/Header";
+import { homeData } from "@/public/data/data";
 
 export default function Home() {
   return (
@@ -11,31 +12,12 @@ export default function Home() {
       <Box sx={{ position: "relative", height: "100vh", p: 2 }}>
         <CssBaseline />
         
-        <Box>
-          <Box sx={{ top: 16, left: 16 }}>
-            <Typography
-              sx={{
-                fontFamily: "serif",
-                fontSize:{
-                  xs:22,
-                  sm:24,
-                  md:26,
-                  lg:28,
-                  xl:30
-                }
-              }}
-            >
-              Marytez Salas
-            </Typography>
-          </Box>
-          <MenuDrawer />
-        </Box>
-
+        <Header/>
 
         <Container
           maxWidth="md"
           sx={{
-            position: "relative", // Make this container relative for positioning
+            position: "relative",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
@@ -66,7 +48,7 @@ export default function Home() {
                 }
               }}
             >
-              Stinky is the name,
+              {homeData.headerLine1}
             </Typography>
             <Typography
               variant="h2"
@@ -81,7 +63,7 @@ export default function Home() {
                 }
               }}
             >
-              art is the passion
+              {homeData.headerLine2}
             </Typography>
             <Divider sx={{width:"75%",mt:1}}/>
           </Box>
@@ -157,11 +139,7 @@ export default function Home() {
                 fontSize:20
               }}
             >
-              Lorem ipsum odor amet, consectetuer adipiscing elit. 
-              Ipsum maecenas himenaeos phasellus nascetur eu dictumst 
-              sociosqu mi sollicitudin. Parturient massa ante libero, 
-              eleifend conubia convallis. Nec morbi tellus non lorem; 
-              fermentum taciti. Egestas purus placerat ornare neque pulvinar.
+              {homeData.manifesto}
             </Typography>
           </Box>
         </Container>

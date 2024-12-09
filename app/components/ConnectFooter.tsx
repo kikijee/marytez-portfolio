@@ -6,7 +6,16 @@ import TikTokIcon from "./TikTokIcon";
 
 const ConnectFooter = () => {
     return (
-        <>
+        <Box
+            component="footer"
+            sx={{
+                py: 2,
+                px: 2,
+                mt: 'auto',
+                backgroundColor: Colors.header_color,
+                width: '100%',
+            }}
+        >
             <Container
                 maxWidth="sm"
                 sx={{
@@ -83,13 +92,13 @@ const ConnectFooter = () => {
             >
                 <Divider sx={{ bgcolor: Colors.black }} />
                 <Box
-                    sx = {{
+                    sx={{
                         display: "flex",
                         justifyContent: "space-between", // Space out the child Boxes
                         alignItems: "center", // Vertically align the children
                         flexWrap: "wrap", // Wrap on smaller screens
                         gap: 2, // Add spacing between items 
-                        mt:3
+                        mt: 3
                     }}
                 >
                     <Typography
@@ -112,7 +121,7 @@ const ConnectFooter = () => {
                     </Typography>
                 </Box>
             </Container>
-        </>
+        </Box>
     );
 }
 

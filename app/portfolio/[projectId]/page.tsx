@@ -1,8 +1,8 @@
 import { Box, CssBaseline, Typography, Container, Divider, Card, CardMedia } from "@mui/material"
-import MenuDrawer from "@/app/components/MenuDrawer"
 import { Colors } from "@/app/theme/colors"
 import ConnectFooter from "@/app/components/ConnectFooter"
 import { projectData } from "@/public/data/data"
+import Header from "@/app/components/Header"
 
 const ProjectPage = ({ params }: {
     params: {
@@ -15,25 +15,7 @@ const ProjectPage = ({ params }: {
         <>
             <Box sx={{ position: "relative", height: "100vh", p: 2 }}>
                 <CssBaseline />
-                <Box>
-                    <Box sx={{ top: 16, left: 16 }}>
-                        <Typography
-                            sx={{
-                                fontFamily: "serif",
-                                fontSize: {
-                                    xs: 22,
-                                    sm: 24,
-                                    md: 26,
-                                    lg: 28,
-                                    xl: 30,
-                                },
-                            }}
-                        >
-                            Marytez Salas
-                        </Typography>
-                    </Box>
-                    <MenuDrawer />
-                </Box>
+                <Header/>
                 <Container
                     sx={{
                         display: "flex",
@@ -126,18 +108,7 @@ const ProjectPage = ({ params }: {
 
                 </Container>
             ))}
-            <Box
-                component="footer"
-                sx={{
-                    py: 2,
-                    px: 2,
-                    mt: "auto",
-                    backgroundColor: Colors.header_color,
-                    width: "100%",
-                }}
-            >
-                <ConnectFooter />
-            </Box>
+            <ConnectFooter/>
         </>
     )
 }

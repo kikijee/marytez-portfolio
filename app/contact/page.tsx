@@ -2,6 +2,7 @@ import { Box, Container, CssBaseline, Typography, Divider, TextField } from "@mu
 import MenuDrawer from "../components/MenuDrawer"
 import ConnectFooter from "../components/ConnectFooter"
 import { Colors } from "../theme/colors"
+import Header from "../components/Header"
 
 
 const contact = () => {
@@ -10,28 +11,10 @@ const contact = () => {
             <Box sx={{ position: "relative", height: "100vh", p: 2 }}>
                 <CssBaseline />
 
-                <Box>
-                    <Box sx={{ top: 16, left: 16 }}>
-                        <Typography
-                            sx={{
-                                fontFamily: "serif",
-                                fontSize: {
-                                    xs: 22,
-                                    sm: 24,
-                                    md: 26,
-                                    lg: 28,
-                                    xl: 30
-                                }
-                            }}
-                        >
-                            Marytez Salas
-                        </Typography>
-                    </Box>
-                    <MenuDrawer />
-                </Box>
+                <Header />
 
                 <Container
-                    maxWidth = "lg"
+                    maxWidth="lg"
                     sx={{
                         display: "flex",
                         justifyContent: "space-between",
@@ -42,7 +25,7 @@ const contact = () => {
                             xs: 20,
                             sm: 22,
                             md: 24,
-                            lg: 26,
+                            lg: 15,
                             xl: 28
                         }
                     }}
@@ -105,11 +88,11 @@ const contact = () => {
                                 mt: 1
                             }}
                         >
-                            <TextField id="outlined-basic" label="Name" variant="outlined" fullWidth/>
-                            <TextField id="outlined-basic" label="Email" variant="outlined" fullWidth/>
+                            <TextField id="outlined-basic" label="Name" variant="outlined" fullWidth />
+                            <TextField id="outlined-basic" label="Email" variant="outlined" fullWidth />
                         </Box>
                         <Box
-                            sx = {{
+                            sx={{
                                 mt: 2
                             }}
                         >
@@ -127,18 +110,8 @@ const contact = () => {
                 </Container>
             </Box>
 
-            <Box
-                component="footer"
-                sx={{
-                    py: 2,
-                    px: 2,
-                    mt: 'auto',
-                    backgroundColor: Colors.header_color,
-                    width: '100%',
-                }}
-            >
-                <ConnectFooter />
-            </Box>
+
+            <ConnectFooter />
         </>
     )
 }

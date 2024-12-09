@@ -1,8 +1,7 @@
 import { Box, CssBaseline, Typography, Container, Divider, Card, CardMedia, CardActionArea } from "@mui/material";
-import MenuDrawer from "../components/MenuDrawer";
 import ConnectFooter from "../components/ConnectFooter";
-import { Colors } from "../theme/colors";
 import { projectData } from "@/public/data/data";
+import Header from "../components/Header";
 
 
 
@@ -11,25 +10,7 @@ const Portfolio = () => {
         <>
             <Box sx={{ position: "relative", height: "100vh", p: 2 }}>
                 <CssBaseline />
-                <Box>
-                    <Box sx={{ top: 16, left: 16 }}>
-                        <Typography
-                            sx={{
-                                fontFamily: "serif",
-                                fontSize: {
-                                    xs: 22,
-                                    sm: 24,
-                                    md: 26,
-                                    lg: 28,
-                                    xl: 30,
-                                },
-                            }}
-                        >
-                            Marytez Salas
-                        </Typography>
-                    </Box>
-                    <MenuDrawer />
-                </Box>
+                <Header/>
 
                 <Container
                     sx={{
@@ -131,18 +112,7 @@ const Portfolio = () => {
 
             </Container>
 
-            <Box
-                component="footer"
-                sx={{
-                    py: 2,
-                    px: 2,
-                    mt: "auto",
-                    backgroundColor: Colors.header_color,
-                    width: "100%",
-                }}
-            >
-                <ConnectFooter />
-            </Box>
+            <ConnectFooter/>
         </>
     );
 };

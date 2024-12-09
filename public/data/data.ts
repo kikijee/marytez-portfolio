@@ -1,3 +1,27 @@
+export const generalData = {
+    name: "Marytez Salas",
+}
+
+export const footerData = {
+    header: "Lets collaborate and create!",
+    instagram: "",
+    tiktok: "",
+    linkedin: "",
+}
+
+export const homeData = {
+    headerLine1: "Stinky is the name,",
+    headerLine2: "art is the passion",
+    manifesto: "Lorem ipsum odor amet, consectetuer adipiscing elit. Ipsum maecenas himenaeos phasellus nascetur eu dictumst sociosqu mi sollicitudin. Parturient massa ante libero, eleifend conubia convallis. Nec morbi tellus non lorem; fermentum taciti. Egestas purus placerat ornare neque pulvinar."
+}
+
+export const contactData = {
+    header: "Contact Me",
+    body: "If you have any questions, require a budget or want information about a project, get in contact with me.",
+    email: "",
+    fieldHeader: "Leave me a message"
+}
+
 export const projectData = [
     { 
         id: 1, 
@@ -100,46 +124,3 @@ export const projectData = [
         ]
     },
 ];
-
-// export const projectData = {
-//     1:{
-//         id: 1, 
-//         name: "Graphic Design", 
-//         coverImage: "images/port_cat/port1.JPG",
-//         projects:[
-//             {
-
-//             }
-//         ]
-//     },
-//     2:{
-//         id: 2, 
-//         name: "Concept Art / Illustration", 
-//         coverImage: "images/port_cat/port2.JPG",
-//         projects:[
-//             {
-                
-//             }
-//         ]
-//     },
-//     3:{
-//         id: 3, 
-//         name: "Photography", 
-//         coverImage: "images/port_cat/port3.png",
-//         projects:[
-//             {
-                
-//             }
-//         ]
-//     },
-//     4:{
-//         id: 4, 
-//         name: "Print Making", 
-//         coverImage: "images/port_cat/port4.JPG",
-//         projects:[
-//             {
-                
-//             }
-//         ]
-//     }
-// }
