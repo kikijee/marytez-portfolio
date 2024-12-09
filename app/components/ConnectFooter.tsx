@@ -45,6 +45,7 @@ const ConnectFooter = () => {
                             py: 1,
                             mt: 4
                         }}
+                        href="/contact"
                     >
                         <Typography
                             sx={{

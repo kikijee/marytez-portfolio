@@ -46,7 +46,7 @@ export default function Home() {
               sm:4,
               md:6,
               lg:8,
-              xl:10
+              xl:20
             },
           }}
         >
@@ -118,8 +118,15 @@ export default function Home() {
             alignItems: "center",
             flexWrap: "wrap",
             gap: 2,
-            height: "100vh",
+            height: "50vh",
             mt: {
+              xs:0,
+              sm:2,
+              md:4,
+              lg:6,
+              xl:0
+            },
+            mb: {
               xs:0,
               sm:2,
               md:4,
