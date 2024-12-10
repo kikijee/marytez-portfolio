@@ -3,6 +3,7 @@ import { LinkedIn, Instagram, Opacity, } from "@mui/icons-material";
 import Button from "@mui/material/Button";
 import { Colors } from "../theme/colors";
 import TikTokIcon from "./TikTokIcon";
+import { footerData, generalData } from "@/public/data/data";
 
 const ConnectFooter = () => {
     return (
@@ -34,7 +35,7 @@ const ConnectFooter = () => {
                             color: Colors.black
                         }}
                     >
-                        Lets collaborate
+                        {footerData.headerLine1}
                     </Typography>
                     <Typography
                         sx={{
@@ -43,7 +44,7 @@ const ConnectFooter = () => {
                             color: Colors.black
                         }}
                     >
-                        and create!
+                        {footerData.headerLine2}
                     </Typography>
                     <Button
                         variant="contained"
@@ -79,9 +80,9 @@ const ConnectFooter = () => {
                     >
                         Socials
                     </Typography>
-                    <IconButton href={'https://www.linkedin.com/in/christian-manibusan-885005259/'}><LinkedIn sx={{ fontSize: 35, color: Colors.black }} /></IconButton>
-                    <IconButton href={'https://www.instagram.com/christian_manibusan/?hl=en'}><Instagram sx={{ fontSize: 35, color: Colors.black }} /></IconButton>
-                    <IconButton href={'https://www.instagram.com/christian_manibusan/?hl=en'}><TikTokIcon size={35} /></IconButton>
+                    <IconButton href={footerData.linkedin}><LinkedIn sx={{ fontSize: 35, color: Colors.black }} /></IconButton>
+                    <IconButton href={footerData.instagram}><Instagram sx={{ fontSize: 35, color: Colors.black }} /></IconButton>
+                    <IconButton href={footerData.tiktok}><TikTokIcon size={35} /></IconButton>
                 </Box>
             </Container>
             <Container
@@ -108,7 +109,7 @@ const ConnectFooter = () => {
                             color: Colors.black
                         }}
                     >
-                        Marytez Salas
+                        {generalData.name}
                     </Typography>
                     <Typography
                         sx={{

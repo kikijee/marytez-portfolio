@@ -62,7 +62,7 @@ const ProjectPage = ({ params }: {
                                 xs: "100%",
                                 sm: "100%",
                                 md: "40%"
-                            }
+                            },
                         }}
                     >
                         <Divider sx={{ maxWidth: "75%" }} />

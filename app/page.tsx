@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, CssBaseline, Container } from "@mui/material";
+import { Box, Typography, CssBaseline, Container, Button } from "@mui/material";
 import Divider from '@mui/material/Divider';
 import ConnectFooter from "./components/ConnectFooter";
 import { Colors } from "./theme/colors";
@@ -11,40 +11,39 @@ export default function Home() {
     <>
       <Box sx={{ position: "relative", height: "100vh", p: 2 }}>
         <CssBaseline />
-        
-        <Header/>
+
+        <Header />
 
         <Container
-          maxWidth="md"
           sx={{
             position: "relative",
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "center",
             alignItems: "center",
             flexWrap: "wrap",
             gap: 2,
             mt: {
-              xs:2,
-              sm:4,
-              md:6,
-              lg:8,
-              xl:20
+              xs: 10,
+              sm: 10,
+              md: 6,
+              lg: 8,
+              xl: 20
             },
           }}
         >
 
           <Box>
-            <Divider sx={{width:"50%"}}/>
+            <Divider sx={{ width: "50%" }} />
             <Typography
               variant="h2"
               sx={{
                 fontFamily: "serif",
-                fontSize:{
-                  xs:26,
-                  sm:28,
-                  md:30,
-                  lg:32,
-                  xl:34
+                fontSize: {
+                  xs: 30,
+                  sm: 35,
+                  md: 40,
+                  lg: 45,
+                  xl: 50
                 }
               }}
             >
@@ -54,18 +53,18 @@ export default function Home() {
               variant="h2"
               sx={{
                 fontFamily: "serif",
-                fontSize:{
-                  xs:26,
-                  sm:28,
-                  md:30,
-                  lg:32,
-                  xl:34
+                fontSize: {
+                  xs: 30,
+                  sm: 35,
+                  md: 40,
+                  lg: 45,
+                  xl: 50
                 }
               }}
             >
               {homeData.headerLine2}
             </Typography>
-            <Divider sx={{width:"75%",mt:1}}/>
+            <Divider sx={{ width: "75%", mt: 1 }} />
           </Box>
           <Box
             component="img"
@@ -75,12 +74,12 @@ export default function Home() {
               opacity: 0.3, // Makes the image blend into the background
               zIndex: -1, // Places the image behind the text
               width: {
-                  xs:'250px',
-                  sm:'300px',
-                  md:'350px',
-                  lg:'400px',
-                  xl:'450px'
-              }, // Adjust size as needed
+                xs: '250px',
+                sm: '300px',
+                md: '350px',
+                lg: '400px',
+                xl: '450px'
+              }, 
               height: "auto",
             }}
           />
@@ -91,58 +90,82 @@ export default function Home() {
 
       </Box>
 
+
       <Container
-          maxWidth="md"
+        maxWidth="md"
+        sx={{
+          position: "relative", // Make this container relative for positioning
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexWrap: "wrap",
+          gap: 2,
+          minHeight: "50vh",
+          bgcolor: "#232735",
+          mb: 5,
+          borderRadius: 10,
+          padding:5
+        }}
+      >
+        <Box
+          component="img"
+          src="/images/about/aboutpicture1.jpg" // Replace with your image path
+          alt="Background Graphic"
           sx={{
-            position: "relative", // Make this container relative for positioning
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            flexWrap: "wrap",
-            gap: 2,
-            height: "50vh",
-            mt: {
-              xs:0,
-              sm:2,
-              md:4,
-              lg:6,
-              xl:0
-            },
-            mb: {
-              xs:0,
-              sm:2,
-              md:4,
-              lg:6,
-              xl:8
-            },
+            width: "400px",
+            height: "auto"
+          }}
+        />
+        <Box
+          sx={{
+            width:{
+              xl:"50%",
+              lg:"50%",
+              md:"50%"
+            }
           }}
         >
-          <Box>
-            <Typography
-              sx={{
-                fontFamily:"serif",
-                fontSize:30,
-              }}
-            >
-              MANIFESTO
-            </Typography>
-            <Divider sx={{maxWidth:"75%"}}/>
-          </Box>
-          <Box
+          <Typography
             sx={{
-              maxWidth:"50%"
+              fontFamily: "serif",
+              fontSize: 30,
+              mb: 3
             }}
+          >
+            About Me
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "serif",
+              fontSize: 20,
+            }}
+          >
+            {homeData.manifesto}
+          </Typography>
+          <Button
+            variant="contained"
+            sx={{
+              bgcolor: Colors.white,
+              borderRadius: 10,
+              px: 3,
+              py: 1,
+              mt: 4
+            }}
+            href="/about"
           >
             <Typography
               sx={{
-                fontFamily:"serif",
-                fontSize:20
+                color: Colors.black,
+                wordSpacing: 5,
+                letterSpacing: 1
               }}
             >
-              {homeData.manifesto}
+              Read More
             </Typography>
-          </Box>
-        </Container>
+
+          </Button>
+        </Box>
+      </Container>
 
       <Box
         component="footer"
