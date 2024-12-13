@@ -15,7 +15,8 @@ const Header =()=> {
                   md:26,
                   lg:28,
                   xl:30
-                }
+                },
+                ml:3
               }}
             >
               {generalData.name}

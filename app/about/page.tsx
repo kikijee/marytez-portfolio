@@ -1,6 +1,8 @@
 import { Box, CssBaseline, Typography, Container } from "@mui/material"
 import Header from "../components/Header"
 import ConnectFooter from "../components/ConnectFooter"
+import { aboutData } from "@/public/data/data"
+
 
 
 
@@ -8,8 +10,11 @@ const about = () => {
     return (
         <>
             <Box sx={{ position: "relative", minHeight: "100vh", p: 2 }}>
+
                 <CssBaseline />
+
                 <Header />
+                
                 <Container
                     sx={{
                         display: "flex",
@@ -21,7 +26,7 @@ const about = () => {
                         mt: 10
                     }}
                 >
-                    <Box maxWidth={"50%"}>
+                    <Box maxWidth={"sm"}>
                         <Typography
                              sx={{
                                 fontFamily: "serif",
@@ -36,9 +41,10 @@ const about = () => {
                                 fontSize: 20,
                             }}
                         >
-                            Lorem ipsum odor amet, consectetuer adipiscing elit. Ipsum maecenas himenaeos phasellus nascetur eu dictumst sociosqu mi sollicitudin. Parturient massa ante libero, eleifend conubia convallis. Nec morbi tellus non lorem; fermentum taciti. Egestas purus placerat ornare neque pulvinar.
+                            {aboutData.description}
                         </Typography>
                     </Box>
+                    
                     <Box
                         component="img"
                         src="/images/port_cat/kiki.JPEG" // Replace with your image path
@@ -60,6 +66,7 @@ const about = () => {
 
                 </Container >
             </Box >
+
             <ConnectFooter />
         </>
     )

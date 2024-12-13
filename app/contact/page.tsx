@@ -8,7 +8,7 @@ import Header from "../components/Header"
 const contact = () => {
     return (
         <>
-            <Box sx={{ position: "relative", height: "100vh", p: 2 }}>
+            <Box sx={{ position: "relative", minHeight: "100vh", p: 2 }}>
                 <CssBaseline />
 
                 <Header />

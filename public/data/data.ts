@@ -13,7 +13,8 @@ export const footerData = {
 export const homeData = {
     headerLine1: "Stinky is the name,",
     headerLine2: "art is the passion",
-    manifesto: "Lorem ipsum odor amet, consectetuer adipiscing elit. Ipsum maecenas himenaeos phasellus nascetur eu dictumst sociosqu mi sollicitudin. Parturient massa ante libero, eleifend conubia convallis. Nec morbi tellus non lorem; fermentum taciti. Egestas purus placerat ornare neque pulvinar."
+    exampleWorkDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    exampleWorkTitle: "Lorem Ipsum"
 }
 
 export const contactData = {
@@ -53,6 +54,7 @@ export const projectData = [
             }
         ]
     },
+    
     { 
         id: 2, 
         name: "Concept Art / Illustration", 

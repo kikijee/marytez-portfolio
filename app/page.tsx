@@ -1,41 +1,42 @@
 import React from "react";
-import { Box, Typography, CssBaseline, Container, Button } from "@mui/material";
+import { Box, Typography, CssBaseline, Container, Button, Stack } from "@mui/material";
 import Divider from '@mui/material/Divider';
 import ConnectFooter from "./components/ConnectFooter";
 import { Colors } from "./theme/colors";
 import Header from "./components/Header";
-import { homeData } from "@/public/data/data";
+import { homeData, aboutData } from "@/public/data/data";
+import ExampleSection from "./components/ExampleSection";
 
 export default function Home() {
   return (
     <>
-      <Box sx={{ position: "relative", height: "100vh", p: 2 }}>
+      <Box sx={{ minHeight: "100vh" }}>
         <CssBaseline />
 
         <Header />
 
         <Container
           sx={{
-            position: "relative",
             display: "flex",
+            flexDirection:{
+              xl:"row",
+              lg:"row",
+              md:"row",
+              sm:"column",
+              xs:"column"
+            },
             justifyContent: "center",
             alignItems: "center",
             flexWrap: "wrap",
-            gap: 2,
-            mt: {
-              xs: 10,
-              sm: 10,
-              md: 6,
-              lg: 8,
-              xl: 20
-            },
+            gap: 4, // No additional gap
+            padding: 0, // Remove default padding
+            minHeight: "100vh"
           }}
         >
 
           <Box>
             <Divider sx={{ width: "50%" }} />
             <Typography
-              variant="h2"
               sx={{
                 fontFamily: "serif",
                 fontSize: {
@@ -50,7 +51,6 @@ export default function Home() {
               {homeData.headerLine1}
             </Typography>
             <Typography
-              variant="h2"
               sx={{
                 fontFamily: "serif",
                 fontSize: {
@@ -71,15 +71,14 @@ export default function Home() {
             src="/images/home_image.JPG" // Replace with your image path
             alt="Background Graphic"
             sx={{
-              opacity: 0.3, // Makes the image blend into the background
               zIndex: -1, // Places the image behind the text
               width: {
-                xs: '250px',
-                sm: '300px',
-                md: '350px',
-                lg: '400px',
-                xl: '450px'
-              }, 
+                xs: '300px',
+                sm: '350px',
+                md: '400px',
+                lg: '550px',
+                xl: '600px'
+              },
               height: "auto",
             }}
           />
@@ -90,82 +89,101 @@ export default function Home() {
 
       </Box>
 
+      <ExampleSection/>
 
-      <Container
-        maxWidth="md"
+      <Box
         sx={{
-          position: "relative", // Make this container relative for positioning
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           flexWrap: "wrap",
-          gap: 2,
-          minHeight: "50vh",
-          bgcolor: "#232735",
-          mb: 5,
-          borderRadius: 10,
-          padding:5
+          minHeight: "100vh",
         }}
       >
-        <Box
-          component="img"
-          src="/images/about/aboutpicture1.jpg" // Replace with your image path
-          alt="Background Graphic"
+        <Container
+          maxWidth="md"
           sx={{
-            width: "400px",
-            height: "auto"
-          }}
-        />
-        <Box
-          sx={{
-            width:{
-              xl:"50%",
-              lg:"50%",
-              md:"50%"
-            }
+            display: "flex",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: 2,
+            bgcolor: "#FFEBDB",
+            borderRadius: 0,
+            padding: 5
           }}
         >
-          <Typography
+          <Box
+            component="img"
+            src="/images/port_cat/kiki.JPEG" 
+            alt="Background Graphic"
             sx={{
-              fontFamily: "serif",
-              fontSize: 30,
-              mb: 3
+              width: {
+                xl:"400px",
+                lg:"400px",
+                md:"400px",
+                sm:"350px",
+                xs:"300px"
+              },
+              height: "auto",
+              borderRadius: 0,
             }}
-          >
-            About Me
-          </Typography>
-          <Typography
+          />
+          <Box
             sx={{
-              fontFamily: "serif",
-              fontSize: 20,
+              width: {
+                xl: "50%",
+                lg: "50%",
+                md: "50%"
+              }
             }}
-          >
-            {homeData.manifesto}
-          </Typography>
-          <Button
-            variant="contained"
-            sx={{
-              bgcolor: Colors.white,
-              borderRadius: 10,
-              px: 3,
-              py: 1,
-              mt: 4
-            }}
-            href="/about"
           >
             <Typography
               sx={{
-                color: Colors.black,
-                wordSpacing: 5,
-                letterSpacing: 1
+                fontFamily: "serif",
+                fontSize: 30,
+                mb: 3,
+                color: Colors.black
               }}
             >
-              Read More
+              About Me
             </Typography>
+            <Typography
+              sx={{
+                fontFamily: "serif",
+                fontSize: 20,
+                color: Colors.black
+              }}
+            >
+              {aboutData.description}
+            </Typography>
+            <Button
+              variant="contained"
+              sx={{
+                bgcolor: Colors.white,
+                borderRadius: 10,
+                px: 3,
+                py: 1,
+                mt: 4
+              }}
+              href="/about"
+            >
+              <Typography
+                sx={{
+                  color: Colors.black,
+                  wordSpacing: 5,
+                  letterSpacing: 1
+                }}
+              >
+                Read More
+              </Typography>
 
-          </Button>
-        </Box>
-      </Container>
+            </Button>
+          </Box>
+        </Container>
+      </Box>
+
+
 
       <Box
         component="footer"
