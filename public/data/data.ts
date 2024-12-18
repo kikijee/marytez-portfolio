@@ -5,9 +5,9 @@ export const generalData = {
 export const footerData = {
     headerLine1: "Lets collaborate",
     headerLine2: "and create!",
-    instagram: "",
-    tiktok: "",
-    linkedin: "",
+    instagram: "https://www.instagram.com/marktez/profilecard/?igsh=NTc4MTIwNjQ2YQ%3D%3D",
+    tiktok: "https://www.tiktok.com/@marktez_?_t=8sJV5jNn34I&_r=1",
+    linkedin: "https://www.linkedin.com/in/marytez-salas-413a96338/",
 }
 
 export const homeData = {
@@ -21,7 +21,7 @@ export const homeData = {
 export const contactData = {
     header: "Contact Me",
     body: "If you have any questions, require a budget or want information about a project, get in contact with me.",
-    email: "",
+    email: "smarytez@gmail.com",
     fieldHeader: "Leave me a message"
 }
 

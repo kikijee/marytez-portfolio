@@ -25,7 +25,7 @@ const MenuDrawer: React.FC = () => {
       {/* Menu Button */}
       <IconButton
         onClick={() => toggleDrawer(true)}
-        sx={{ position: "fixed", top: 16, right: 16 }}
+        sx={{ position: "fixed", top: 16, right: 16, zIndex: 1 }}
       >
         <MenuIcon sx={{fontSize: 35}} />
       </IconButton>

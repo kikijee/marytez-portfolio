@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Container, Box, Typography, Divider } from "@mui/material";
-import { homeData } from "@/public/data/data";
+import { contactData, homeData } from "@/public/data/data";
 import { Colors } from "../../theme/colors";
 
 const HomePageSection1 = () => {
@@ -80,6 +80,26 @@ const HomePageSection1 = () => {
                 mt: 1,
               }}
             />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+          >
+          <Typography
+             sx={{
+              fontFamily: "serif",
+              fontSize: {
+                xs: 22,
+                sm: 24,
+                md: 26,
+                lg: 28,
+                xl: 30,
+              },
+            }}
+          >
+            {contactData.email}
+          </Typography>
           </motion.div>
         </Box>
 

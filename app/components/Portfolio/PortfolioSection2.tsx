@@ -16,7 +16,7 @@ const PortfolioSection2 = () => {
                     setIsVisible(true); // Trigger animation
                 }
             },
-            { threshold: 0.5 } // Trigger when 50% of the section is visible
+            { threshold: 0.2 } // Trigger when 50% of the section is visible
         );
 
         const target = document.getElementById("portfolio-section");
@@ -62,7 +62,18 @@ const PortfolioSection2 = () => {
                         animate={isVisible ? { opacity: 1, y: 0 } : {}} // Trigger animation
                         transition={{ duration: 2, ease: "anticipate" }} // Smooth transition
                     >
-                        <Typography sx={{ fontFamily: "serif", fontSize: 50 }}>
+                        <Typography 
+                            sx={{ 
+                                fontFamily: "serif", 
+                                fontSize: {
+                                    xl: 50,
+                                    lg:50,
+                                    md:50,
+                                    sm:40,
+                                    xs:40
+                                }
+                            }}
+                        >
                             Categories
                         </Typography>
                     </motion.div>
@@ -113,8 +124,20 @@ const PortfolioSection2 = () => {
                                         className="image"
                                         sx={{
                                             transition: "filter 0.3s ease, transform 0.3s ease",
-                                            width: '400px',
-                                            height: '400px',
+                                            width: {
+                                                xl: "400px",
+                                                lg: "400px",
+                                                md: "350px",
+                                                sm: "350px",
+                                                xs: "300px"
+                                            },
+                                            height: {
+                                                xl: "400px",
+                                                lg: "400px",
+                                                md: "350px",
+                                                sm: "350px",
+                                                xs: "300px"
+                                            },
                                         }}
                                     />
                                     <Typography

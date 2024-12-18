@@ -126,7 +126,7 @@ const ProjectPage = ({ params }: {
                                         key={i}
                                         sx={{
                                             position: "relative",
-                                            overflow: "hidden",
+                                            overflow:"hidden"
                                         }}
                                     >
                                         <CardMedia
@@ -134,8 +134,20 @@ const ProjectPage = ({ params }: {
                                             image={data}
                                             className="image"
                                             sx={{
-                                                width: 'auto',
-                                                height: '400px',
+                                                width: {
+                                                    xl:'auto',
+                                                    lg:'auto',
+                                                    md:'auto',
+                                                    sm:'300px',
+                                                    xs:'300px'
+                                                },
+                                                height: {
+                                                    xl:'400px',
+                                                    lg:'400px',
+                                                    md:'400px',
+                                                    sm:'auto',
+                                                    xs:'auto'
+                                                },
                                             }}
                                         />
                                     </Card>

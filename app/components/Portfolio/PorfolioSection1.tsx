@@ -47,7 +47,7 @@ const PortfolioSection1 = () => {
           justifyContent: "center",
           alignItems: "center",
           height: "100vh",
-          zIndex: 1, // Ensure it appears above the background
+          zIndex: 0, // Ensure it appears above the background
           position: "relative", // Required for zIndex to work
         }}
       >

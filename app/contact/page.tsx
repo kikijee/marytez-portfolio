@@ -2,6 +2,7 @@ import { Box, Container, CssBaseline, Typography, Divider } from "@mui/material"
 import ConnectFooter from "../components/ConnectFooter"
 import { Colors } from "../theme/colors"
 import Header from "../components/Header"
+import { contactData } from "@/public/data/data"
 
 
 const contact = () => {
@@ -57,7 +58,7 @@ const contact = () => {
                                 mt:2
                             }}
                         >
-                            smarytez@gmail.com
+                            {contactData.email}
                         </Typography>
                     </Box>
 
