@@ -102,7 +102,7 @@ export const projectData = [
     { 
         id: 4, 
         name: "Print Making", 
-        coverImage: "/images/port_cat/port4.JPG",
+        coverImage: "/images/port_cat/port4.jpg",
         projects:[
             {
                 name:"Lived Experience",
