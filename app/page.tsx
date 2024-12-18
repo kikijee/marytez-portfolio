@@ -1,11 +1,8 @@
 import React from "react";
-import { Box, Typography, CssBaseline, Container, Button, Stack } from "@mui/material";
-import Divider from '@mui/material/Divider';
+import { Box, CssBaseline } from "@mui/material";
 import ConnectFooter from "./components/ConnectFooter";
 import { Colors } from "./theme/colors";
 import Header from "./components/Header";
-import { homeData, aboutData } from "@/public/data/data";
-import HomePageSection2 from "./components/HomePage/HomePageSection2";
 import HomePageSection1 from "./components/HomePage/HomePageSection1";
 import HomePageSection3 from "./components/HomePage/HomePageSection3";
 

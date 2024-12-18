@@ -11,8 +11,8 @@ export const footerData = {
 }
 
 export const homeData = {
-    headerLine1: "Stinky is the name,",
-    headerLine2: "art is the passion",
+    headerLine1: "Marytez Salas,",
+    headerLine2: "Design Portfolio",
     homePicture:"/images/projects/conceptArt/fashionStudy/IMG_7195.JPG",
     exampleWorkDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     exampleWorkTitle: "Lorem Ipsum"

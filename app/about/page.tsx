@@ -1,4 +1,4 @@
-import { Box, CssBaseline, Typography, Container } from "@mui/material"
+import { Box, CssBaseline } from "@mui/material"
 import Header from "../components/Header"
 import ConnectFooter from "../components/ConnectFooter"
 import { aboutData } from "@/public/data/data"

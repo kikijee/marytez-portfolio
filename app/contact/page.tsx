@@ -1,5 +1,4 @@
-import { Box, Container, CssBaseline, Typography, Divider, TextField } from "@mui/material"
-import MenuDrawer from "../components/MenuDrawer"
+import { Box, Container, CssBaseline, Typography, Divider } from "@mui/material"
 import ConnectFooter from "../components/ConnectFooter"
 import { Colors } from "../theme/colors"
 import Header from "../components/Header"

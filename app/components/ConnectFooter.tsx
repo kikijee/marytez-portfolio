@@ -1,5 +1,5 @@
 import { Box, Container, IconButton, Typography, Divider } from "@mui/material";
-import { LinkedIn, Instagram, Opacity, } from "@mui/icons-material";
+import { LinkedIn, Instagram } from "@mui/icons-material";
 import Button from "@mui/material/Button";
 import { Colors } from "../theme/colors";
 import TikTokIcon from "./TikTokIcon";
