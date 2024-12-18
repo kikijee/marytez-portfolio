@@ -23,17 +23,17 @@ const HomePageSection1 = () => {
           justifyContent: "center",
           alignItems: "center",
           flexWrap: "wrap",
-          gap: 4, // Spacing between elements
-          padding: 0, // Remove default padding
+          gap: 4, 
+          padding: 0, 
           minHeight: "100vh",
         }}
       >
-        {/* Animated Text Section */}
+
         <Box>
           <motion.div
-            initial={{ opacity: 0, y: -50 }} // Starting state
-            animate={{ opacity: 1, y: 0 }} // Trigger animation
-            transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
+            initial={{ opacity: 0, y: -50 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.8, ease: "easeOut" }} 
           >
             <Typography
               sx={{
@@ -71,8 +71,8 @@ const HomePageSection1 = () => {
             </Typography>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, width: 0 }} // Start with zero width
-            animate={{ opacity: 1, width: "75%" }} // Animate to full width
+            initial={{ opacity: 0, width: 0 }} 
+            animate={{ opacity: 1, width: "75%" }} 
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <Divider
@@ -103,18 +103,17 @@ const HomePageSection1 = () => {
           </motion.div>
         </Box>
 
-        {/* Animated Image Section */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }} // Start scaled down and invisible
-          animate={{ opacity: 1, scale: 1 }} // Animate when visible
+          initial={{ opacity: 0, scale: 0.8 }} 
+          animate={{ opacity: 1, scale: 1 }} 
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
           <Box
             component="img"
-            src={homeData.homePicture} // Replace with your image path
+            src={homeData.homePicture} 
             alt="Background Graphic"
             sx={{
-              zIndex: -1, // Places the image behind the text
+              zIndex: -1, 
               width: {
                 xs: "300px",
                 sm: "350px",

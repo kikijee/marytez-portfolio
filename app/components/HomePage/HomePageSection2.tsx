@@ -12,7 +12,7 @@ function HomePageSection2() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true); // Trigger animation
+          setIsVisible(true); 
         }
       },
       { threshold: 0.5 } // Trigger when 50% of the section is visible
@@ -47,32 +47,30 @@ function HomePageSection2() {
           textAlign: "center",
         }}
       >
-        {/* Typography 1 with Fade-In */}
+
         <motion.div
-          initial={{ opacity: 0, y: 20 }} // Starting state: invisible and slightly below
-          animate={isVisible ? { opacity: 1, y: 0 } : {}} // Animate when visible
-          transition={{ duration: 1 }} // Duration of animation
+          initial={{ opacity: 0, y: 20 }} 
+          animate={isVisible ? { opacity: 1, y: 0 } : {}} 
+          transition={{ duration: 1 }} 
         >
           <Typography sx={{ fontFamily: "serif", fontSize: 30 }}>
             {homeData.exampleWorkDescription}
           </Typography>
         </motion.div>
 
-        {/* Typography 2 with Fade-In */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 1, delay: 0.3 }} // Add delay for staggered effect
+          transition={{ duration: 1, delay: 0.3 }}
         >
           <Typography sx={{ fontFamily: "serif", fontSize: 40 }}>
             {homeData.exampleWorkTitle}
           </Typography>
         </motion.div>
 
-        {/* Divider with Fade-In */}
         <motion.div
-          initial={{ opacity: 0, width: 0 }} // Start with zero width
-          animate={{ opacity: 1, width: "75%" }} // Animate to full width
+          initial={{ opacity: 0, width: 0 }} 
+          animate={{ opacity: 1, width: "75%" }} 
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <Divider

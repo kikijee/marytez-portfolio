@@ -14,12 +14,12 @@ const ProjectSection1 =({ coverImage, name }: {
                     position: "relative",
                     height: "100vh",
                     bgcolor: Colors.background,
-                    overflow: "hidden", // Ensure content doesn't overflow
+                    overflow: "hidden", 
                 }}>
                 <Box
                     component={motion.div}
-                    initial={{ opacity: 0 }} // Start fully transparent
-                    animate={{ opacity: 0.3 }} // Fade in
+                    initial={{ opacity: 0 }} 
+                    animate={{ opacity: 0.3 }} 
                     transition={{ duration: 2 }}
                     sx={{
                         position: "absolute",
@@ -32,7 +32,7 @@ const ProjectSection1 =({ coverImage, name }: {
                         backgroundPosition: "center center",
                         backgroundRepeat: "no-repeat",
                         backgroundBlendMode: "overlay",
-                        zIndex: 0, // Place it behind the content
+                        zIndex: 0, 
 
                     }}
                 />
@@ -43,8 +43,8 @@ const ProjectSection1 =({ coverImage, name }: {
                         justifyContent: "center",
                         alignItems: "center",
                         height: "100vh",
-                        zIndex: 1, // Ensure it appears above the background
-                        position: "relative", // Required for zIndex to work
+                        zIndex: 1, 
+                        position: "relative", 
                     }}
                 >
                     <Box
@@ -53,16 +53,16 @@ const ProjectSection1 =({ coverImage, name }: {
                         }}
                     >
                         <motion.div
-                            initial={{ opacity: 0, width: 0 }} // Start with zero opacity and width
-                            animate={{ opacity: 1, width: "100%" }} // Animate to full width and opacity
-                            transition={{ duration: 2, delay: 0 }} // Delay for a staggered effect
+                            initial={{ opacity: 0, width: 0 }}
+                            animate={{ opacity: 1, width: "100%" }} 
+                            transition={{ duration: 2, delay: 0 }} 
                         >
                             <Divider sx={{ mb: 2, border: 1 }} />
                         </motion.div>
                         <motion.div
-                            initial={{ opacity: 0, y: -20 }} // Start slightly above
-                            animate={{ opacity: 1, y: 0 }} // Animate to aligned position
-                            transition={{ duration: 2, delay: 0 }} // Delay for staggered effect
+                            initial={{ opacity: 0, y: -20 }} 
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 2, delay: 0 }} 
                         >
                             <Typography
                                 sx={{

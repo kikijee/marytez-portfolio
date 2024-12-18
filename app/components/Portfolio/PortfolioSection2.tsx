@@ -13,10 +13,10 @@ const PortfolioSection2 = () => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    setIsVisible(true); // Trigger animation
+                    setIsVisible(true); 
                 }
             },
-            { threshold: 0.2 } // Trigger when 50% of the section is visible
+            { threshold: 0.2 } 
         );
 
         const target = document.getElementById("portfolio-section");
@@ -40,7 +40,6 @@ const PortfolioSection2 = () => {
                     minHeight: "100vh",
                 }}
             >
-                {/* Title with divider animations */}
 
                 <Box sx={{
                     width: "100%",
@@ -51,16 +50,16 @@ const PortfolioSection2 = () => {
                     flexWrap: "wrap",
                 }}>
                     <motion.div
-                        initial={{ opacity: 0, width: 0 }} // Start with zero width
-                        animate={isVisible ? { opacity: 1, width: "10%" } : {}} // Animate to full width
+                        initial={{ opacity: 0, width: 0 }} 
+                        animate={isVisible ? { opacity: 1, width: "10%" } : {}} 
                         transition={{ duration: 0.8, delay: 0.4 }}
                     >
                         <Divider />
                     </motion.div>
                     <motion.div
-                        initial={{ opacity: 0, y: -50 }} // Starting state
-                        animate={isVisible ? { opacity: 1, y: 0 } : {}} // Trigger animation
-                        transition={{ duration: 2, ease: "anticipate" }} // Smooth transition
+                        initial={{ opacity: 0, y: -50 }} 
+                        animate={isVisible ? { opacity: 1, y: 0 } : {}} 
+                        transition={{ duration: 2, ease: "anticipate" }} 
                     >
                         <Typography 
                             sx={{ 
@@ -78,8 +77,8 @@ const PortfolioSection2 = () => {
                         </Typography>
                     </motion.div>
                     <motion.div
-                        initial={{ opacity: 0, width: 0 }} // Start with zero width
-                        animate={isVisible ? { opacity: 1, width: "10%" } : {}} // Animate to full width
+                        initial={{ opacity: 0, width: 0 }} 
+                        animate={isVisible ? { opacity: 1, width: "10%" } : {}} 
                         transition={{ duration: 0.8, delay: 0.4 }}
                     >
                         <Divider />
@@ -87,13 +86,12 @@ const PortfolioSection2 = () => {
 
                 </Box>
 
-                {/* Category Cards */}
                 {projectData.map((data, i) => (
                     <motion.div
                         key={i}
-                        initial={{ opacity: 0, y: 20 }} // Start invisible and slightly below
-                        animate={isVisible ? { opacity: 1, y: 0 } : {}} // Animate to visible and aligned
-                        transition={{ duration: 1, delay: 0.2 * (i + 1) }} // Staggered delay based on index
+                        initial={{ opacity: 0, y: 20 }} 
+                        animate={isVisible ? { opacity: 1, y: 0 } : {}} 
+                        transition={{ duration: 1, delay: 0.2 * (i + 1) }} 
                     >
                         <Box sx={{ marginBottom: 2 }}>
                             <Card

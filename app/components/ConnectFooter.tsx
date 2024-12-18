@@ -21,10 +21,10 @@ const ConnectFooter = () => {
                 maxWidth="sm"
                 sx={{
                     display: "flex",
-                    justifyContent: "space-between", // Space out the child Boxes
-                    alignItems: "center", // Vertically align the children
-                    flexWrap: "wrap", // Wrap on smaller screens
-                    gap: 2, // Add spacing between items
+                    justifyContent: "space-between", 
+                    alignItems: "center",
+                    flexWrap: "wrap", 
+                    gap: 2, 
                 }}
             >
                 <Box>
@@ -95,10 +95,10 @@ const ConnectFooter = () => {
                 <Box
                     sx={{
                         display: "flex",
-                        justifyContent: "space-between", // Space out the child Boxes
-                        alignItems: "center", // Vertically align the children
-                        flexWrap: "wrap", // Wrap on smaller screens
-                        gap: 2, // Add spacing between items 
+                        justifyContent: "space-between", 
+                        alignItems: "center", 
+                        flexWrap: "wrap", 
+                        gap: 2, 
                         mt: 3
                     }}
                 >

@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Box, CssBaseline, Container, Divider, Typography } from "@mui/material";
-import Header from "../Header"; // Assuming Header is a separate component
-import { Colors } from "../../theme/colors"; // Assuming Colors is defined in your theme
+import Header from "../Header"; 
+import { Colors } from "../../theme/colors"; 
 
 const PortfolioSection1 = () => {
   return (
@@ -13,14 +13,13 @@ const PortfolioSection1 = () => {
         position: "relative",
         height: "100vh",
         bgcolor: Colors.background,
-        overflow: "hidden", // Ensure content doesn't overflow
+        overflow: "hidden", 
       }}
     >
-      {/* Background Layer */}
       <Box
         component={motion.div}
-        initial={{ opacity: 0 }} // Start fully transparent
-        animate={{ opacity: 0.3 }} // Fade in
+        initial={{ opacity: 0 }} 
+        animate={{ opacity: 0.3 }} 
         transition={{ duration: 2 }}
         sx={{
           position: "absolute",
@@ -33,7 +32,7 @@ const PortfolioSection1 = () => {
           backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
           backgroundBlendMode: "overlay",
-          zIndex: 0, // Place it behind the content
+          zIndex: 0, 
           
         }}
       />
@@ -47,30 +46,27 @@ const PortfolioSection1 = () => {
           justifyContent: "center",
           alignItems: "center",
           height: "100vh",
-          zIndex: 0, // Ensure it appears above the background
-          position: "relative", // Required for zIndex to work
+          zIndex: 0, 
+          position: "relative", 
         }}
       >
-        {/* Animated Content */}
         <Box
           sx={{
             textAlign: "center",
           }}
         >
-          {/* Divider with Animation */}
           <motion.div
-            initial={{ opacity: 0, width: 0 }} // Start with zero opacity and width
-            animate={{ opacity: 1, width: "100%" }} // Animate to full width and opacity
-            transition={{ duration: 2, delay: 0 }} // Delay for a staggered effect
+            initial={{ opacity: 0, width: 0 }} 
+            animate={{ opacity: 1, width: "100%" }} 
+            transition={{ duration: 2, delay: 0 }} 
           >
             <Divider sx={{ mb: 2, border: 1 }} />
           </motion.div>
 
-          {/* Typography with Animation */}
           <motion.div
-            initial={{ opacity: 0, y: -20 }} // Start slightly above
-            animate={{ opacity: 1, y: 0 }} // Animate to aligned position
-            transition={{ duration: 2, delay: 0 }} // Delay for staggered effect
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 2, delay: 0 }} 
           >
             <Typography
               sx={{

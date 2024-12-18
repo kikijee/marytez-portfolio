@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Box, Container, Typography, Button } from "@mui/material";
-import { Colors } from "../../theme/colors"; // Assuming you have a Colors theme object
-import { aboutData } from "@/public/data/data"; // Assuming this is where the data comes from
+import { Colors } from "../../theme/colors"; 
+import { aboutData } from "@/public/data/data";
 
 const HomePageSection3 = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,10 +12,10 @@ const HomePageSection3 = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true); // Trigger animation
+          setIsVisible(true); 
         }
       },
-      { threshold: 0.5 } // Trigger when 50% of the section is visible
+      { threshold: 0.5 } 
     );
 
     const target = document.getElementById("about-section");
@@ -51,7 +51,6 @@ const HomePageSection3 = () => {
           padding: 5,
         }}
       >
-        {/* Image Section */}
         <Box
           component={motion.div}
           initial={{ opacity: 0, scale: 0.8 }}
@@ -70,7 +69,7 @@ const HomePageSection3 = () => {
           }}
         >
           <img
-            src={aboutData.descriptionPic} // Replace with your image path
+            src={aboutData.descriptionPic} 
             alt="Background Graphic"
             style={{
               width: "100%",
@@ -80,7 +79,6 @@ const HomePageSection3 = () => {
           />
         </Box>
 
-        {/* Text Section */}
         <Box
           component={motion.div}
           initial={{ opacity: 0, y: 50 }}
