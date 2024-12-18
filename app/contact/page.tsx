@@ -8,7 +8,7 @@ import Header from "../components/Header"
 const contact = () => {
     return (
         <>
-            <Box sx={{ position: "relative", minHeight: "100vh", p: 2 }}>
+            <Box sx={{ position: "relative", minHeight: "100vh", bgcolor: Colors.background }}>
                 <CssBaseline />
 
                 <Header />
@@ -17,17 +17,10 @@ const contact = () => {
                     maxWidth="lg"
                     sx={{
                         display: "flex",
-                        justifyContent: "space-between",
+                        justifyContent: "center",
                         alignItems: "center",
-                        flexWrap: "wrap",
+                        height: "100vh",
                         gap: 2,
-                        mt: {
-                            xs: 20,
-                            sm: 22,
-                            md: 24,
-                            lg: 15,
-                            xl: 28
-                        }
                     }}
                 >
                     <Box
@@ -58,9 +51,18 @@ const contact = () => {
                             want information about a project, get in contact
                             with me.
                         </Typography>
+                        <Typography
+                            sx={{
+                                fontFamily: "serif",
+                                fontSize: 20,
+                                mt:2
+                            }}
+                        >
+                            smarytez@gmail.com
+                        </Typography>
                     </Box>
 
-                    <Box
+                    {/* <Box
                         sx={{
                             maxWidth: {
                                 xs: "100%",
@@ -105,7 +107,7 @@ const contact = () => {
                                 fullWidth
                             />
                         </Box>
-                    </Box>
+                    </Box> */}
 
                 </Container>
             </Box>

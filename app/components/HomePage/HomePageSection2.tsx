@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Typography, Box, Stack, Divider } from "@mui/material";
 import { homeData } from "@/public/data/data";
 
-function ExampleSection() {
+function HomePageSection2() {
   const [isVisible, setIsVisible] = useState(false);
 
   
@@ -86,4 +86,4 @@ function ExampleSection() {
   );
 }
 
-export default ExampleSection;
+export default HomePageSection2;
